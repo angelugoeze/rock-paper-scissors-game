@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <header class="flex">
+      <h1 class="center uppercase">Rock Paper Scissor Game</h1>
+    </header>
+    <main>
+      <section class="score-board flex">
+        <h2 class="score-label">You</h2>
+        <p id="player-score" class="score">0</p>
+        <span>:</span>
+        <p id="comp-score" class="score">0</p>
+        <h2 class="score-label">Comp</h2>
+      </section>
+
+      <section class="choice-container grid">
+        <button id="rock-btn" class="choice">
+          <img src="images/rock.png" alt="Rock" />
+          <span class="sr-only">Rock</span>
+        </button>
+        <button id="paper-btn" class="choice">
+          <img src="images/paper.png" alt="Paper" />
+          <span class="sr-only">Paper</span>
+        </button>
+        <button id="scissors-btn" class="choice">
+          <img src="images/scissors.png" alt="Scissors" />
+          <span class="sr-only">Scissors</span>
+        </button>
+      </section>
+
+      <section>
+        <p id="comment" class="comment">
+          Choose any one: Rock, Paper or Scissors
+        </p>
+      </section>
+    </main>
+  </body>
+  <script defer src="main.js"></script>
+</html>
