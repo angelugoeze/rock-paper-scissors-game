@@ -89,6 +89,7 @@ function handleWin(combMoves) {
   playerScoreElem.innerHTML = playerScore;
 }
 
+// If the player loses
 function handleLose(combMoves) {
   computerScore += 1;
   let message = "😭 Lose! ";
