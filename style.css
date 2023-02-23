@@ -75,15 +75,14 @@ main {
 .choice-container {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  column-gap: 16px;
-  width: 90%;
+  column-gap: 6px;
   margin: 0 auto;
 }
 
 .choice {
   aspect-ratio: 1/1;
   width: 100%;
-  padding: 20px;
+  padding: 30px;
   border-radius: 100%;
   border: 5px solid #333;
   cursor: pointer;
@@ -120,4 +119,18 @@ main {
   text-align: center;
   font-weight: 600;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 780px) {
+  .choice-container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .choice {
+    aspect-ratio: 1/1;
+    width: 100%;
+    padding: 20px;
+  }
 }
